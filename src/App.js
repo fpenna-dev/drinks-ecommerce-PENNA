@@ -1,12 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
+import ItemListContainer from "./components/ItemListContainer";
 
 function App() {
   return (
     <>
       <Navbar />
-      <h2>Productos</h2>
+      <ItemListContainer desc="Hola soy el componente ItemListContainer" />
     </>
   );
 }

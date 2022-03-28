@@ -1,6 +1,7 @@
 import React from "react";
 import "./navbar.css";
 import logo from "../logo.png";
+import CartWidget from "./CartWidget";
 
 const NavBar = () => {
   return (
@@ -29,6 +30,9 @@ const NavBar = () => {
             <a href="" className="navbar__link">
               Categoria 4
             </a>
+          </li>
+          <li className="navbar__item">
+            <CartWidget count="5" />
           </li>
         </ul>
       </div>
