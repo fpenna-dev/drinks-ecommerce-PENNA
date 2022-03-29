@@ -1,3 +1,18 @@
+* {
+  box-sizing: border-box;
+  color: #111;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .App {
   text-align: center;
 }
