@@ -1,0 +1,49 @@
+.card {
+  background-color: #f4f4f4;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+.card__title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px;
+  min-height: 57px;
+  display: flex;
+  align-items: center;
+}
+.card__img {
+  width: 100%;
+  padding: 5px 15px;
+}
+.card__price {
+  font-size: 1.2rem;
+  color: #a2bf5e;
+  margin: 5px;
+  font-weight: bold;
+}
+.card__stock {
+  font-size: 0.8rem;
+  margin: 0px 10px 10px;
+}
+.card__btn {
+  font-size: 1.25rem;
+  width: 100%;
+  margin: 0px;
+  border: none;
+  padding: 10px;
+  background-color: #fcb258;
+  cursor: pointer;
+  transition: 800ms;
+  color: #424242;
+}
+
+.card__btn:hover {
+  background-color: #f5ce9f;
+  color: #353535;
+}
