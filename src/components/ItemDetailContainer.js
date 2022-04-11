@@ -13,7 +13,6 @@ const ItemDetailContainer = () => {
       .then((result) => setDato(result))
       .catch((err) => console.log(err));
   }, []);
-  console.log(dato);
   return (
     <>
       <div className="container">
