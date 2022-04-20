@@ -1,0 +1,30 @@
+.cart__container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: auto;
+}
+.cart__btn{
+    font-size: 1.25rem;
+    width: 200px;
+    margin: 20px 0;
+    margin-left: auto;
+    border: none;
+    padding: 10px;
+    background-color: #fcb258;
+    cursor: pointer;
+    transition: 800ms;
+    color: #424242;
+    text-decoration: none;
+    text-align: center;
+
+
+}
+
+.cart__btn:hover {
+    background-color: #f5ce9f;
+    color: #353535;
+  }
+  
