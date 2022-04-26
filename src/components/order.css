@@ -1,0 +1,40 @@
+.order__container{
+    width: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    max-height: 350px;
+
+
+}
+.order__subtotal, .order__impuesto, .order__total{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    margin: 10px;
+}
+
+.order__btn{
+    width: 70%;
+    font-size: 1.25rem;
+
+    margin: 20px 0;
+
+    border: none;
+    padding: 10px;
+    background-color: #fcb258;
+    cursor: pointer;
+    transition: 800ms;
+    color: #424242;
+    text-decoration: none;
+    text-align: center;
+}
+
+.order__btn:hover {
+    background-color: #f5ce9f;
+    color: #353535;
+  }

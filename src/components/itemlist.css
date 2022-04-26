@@ -1,0 +1,7 @@
+.itemlist__container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 80%;
+}
