@@ -1,0 +1,10 @@
+.checkoutBtn{
+    padding: 10px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #f4f4f4;
+    font-size: 1.5rem;
+    background-color: #FCB258;
+}

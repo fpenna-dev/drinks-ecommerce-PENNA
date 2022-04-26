@@ -2,12 +2,10 @@ import React from "react";
 import "./itemcount.css";
 import { useState } from "react";
 
-const ItemCount = (props) => {
-  // Creo la varaible "stock" para pasarla como prop
-  let stock = props.stock;
-
+const ItemCount = ({ stock, initial, onAdd }) => {
   // Defino el useState
-  const [count, setCount] = useState(props.initial);
+
+  const [count, setCount] = useState(0);
 
   // Creo la funcion "increment" para aumentar el item, con un condicional que checkee el stock
   const increment = () => {
@@ -18,17 +16,8 @@ const ItemCount = (props) => {
 
   // Creo la funcion "decrement" para aumentar el item, con un condicional que checkee el stock
   const decrement = () => {
-    if (count > 0) {
+    if (count > initial) {
       setCount(count - 1);
-    }
-  };
-
-  // Creo la funcion "addToCart" para agregar los items al carrito con validaciones con respecto al stock y no agregar 0 productos
-  const addToCart = () => {
-    if (count === 0) {
-      alert(`Por favor seleccione cuantos productos quiere agregar al carrito`);
-    } else if (count > 0) {
-      alert(`Agregaste ${count} productos al carrito de compra`);
     }
   };
 
@@ -46,7 +35,7 @@ const ItemCount = (props) => {
           </button>
         </div>
 
-        <button onClick={addToCart} className="count__btnAdd">
+        <button onClick={() => onAdd(count)} className="count__btnAdd">
           Agregar al Carrito
         </button>
       </div>
