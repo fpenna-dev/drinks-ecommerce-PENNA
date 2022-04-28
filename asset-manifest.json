@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/drinks-ecommerce-PENNA/static/css/main.3c286892.css",
+    "main.js": "/drinks-ecommerce-PENNA/static/js/main.cb79ab1a.js",
+    "static/media/logo.png": "/drinks-ecommerce-PENNA/static/media/logo.598590fe290b29756a8c.png",
+    "index.html": "/drinks-ecommerce-PENNA/index.html",
+    "main.3c286892.css.map": "/drinks-ecommerce-PENNA/static/css/main.3c286892.css.map",
+    "main.cb79ab1a.js.map": "/drinks-ecommerce-PENNA/static/js/main.cb79ab1a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c286892.css",
+    "static/js/main.cb79ab1a.js"
+  ]
+}
