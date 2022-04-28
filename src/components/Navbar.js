@@ -16,32 +16,32 @@ const NavBar = () => {
         </Link>
         <ul className="navbar__categories">
           <li className="navbar__item">
-            <Link to="/category/2" className="navbar__link">
+            <Link to="/category/fernet" className="navbar__link">
               Fernet
             </Link>
           </li>
           <li className="navbar__item">
-            <Link to="/category/14" className="navbar__link">
+            <Link to="/category/aperitivos" className="navbar__link">
               Aperitivos
             </Link>
           </li>
           <li className="navbar__item">
-            <Link to="/category/17" className="navbar__link">
+            <Link to="/category/vodka" className="navbar__link">
               Vodka
             </Link>
           </li>
           <li className="navbar__item">
-            <Link to="/category/5" className="navbar__link">
+            <Link to="/category/whiskies" className="navbar__link">
               Whiskies
             </Link>
           </li>
           <li className="navbar__item">
-            <Link to="/category/3" className="navbar__link">
+            <Link to="/category/licores" className="navbar__link">
               Licores
             </Link>
           </li>
           <li className="navbar__item">
-            <Link to="/category/8" className="navbar__link">
+            <Link to="/category/combos" className="navbar__link">
               Combos
             </Link>
           </li>

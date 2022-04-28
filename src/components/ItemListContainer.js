@@ -1,11 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import ItemCount from "./ItemCount";
 import ItemList from "./itemList";
-import customFetch from "./ulility/customFetch";
 import "./itemlistcontainer.css";
 import { useParams } from "react-router-dom";
-const { drinks } = require("./ulility/drinks");
+import { collection, getDocs } from "firebase/firestore";
+import db from "./ulility/firebaseConfig";
 
 const ItemListContainer = ({ desc }) => {
   const [datos, setDatos] = useState([]);
@@ -13,14 +12,30 @@ const ItemListContainer = ({ desc }) => {
 
   useEffect(() => {
     if (idCategory === undefined) {
-      customFetch(2000, drinks)
+      const fetchFromFirestore = async () => {
+        const querySnapshot = await getDocs(collection(db, "drinks"));
+        const dataFromFirestore = querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        return dataFromFirestore;
+      };
+      fetchFromFirestore()
         .then((result) => setDatos(result))
         .catch((err) => console.log(err));
     } else {
-      customFetch(
-        2000,
-        drinks.filter((item) => item.nCategory === parseInt(idCategory))
-      )
+      const fetchFromFirestore2 = async () => {
+        const querySnapshot = await getDocs(collection(db, "drinks"));
+        const dataFromFirestore = querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        const categoryFilter = dataFromFirestore.filter(
+          (item) => item.nCategory === idCategory
+        );
+        return categoryFilter;
+      };
+      fetchFromFirestore2()
         .then((result) => setDatos(result))
         .catch((err) => console.log(err));
     }
