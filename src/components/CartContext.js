@@ -4,13 +4,13 @@ export const CartContext = createContext();
 
 const CartContextProvider = ({ children }) => {
   const [cartList, setCartList] = useState([]);
-  const addToCart = (item, cant) => {
+  const addToCart = (item, cant, id2) => {
     let find = cartList.find((drinks) => drinks.idItem === item.id);
     if (find === undefined) {
       setCartList([
         ...cartList,
         {
-          idItem: item.id,
+          idItem: id2,
           titleItem: item.name,
           imageItem: item.image,
           priceItem: item.price,

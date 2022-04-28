@@ -35,7 +35,7 @@ const Cart = () => {
                   price={item.priceItem}
                   image={item.imageItem}
                   qty={item.cantItem}
-                  click={() => data.removeItem(item.idItem, item.cantItem - 1)}
+                  click={() => data.removeItem(item.idItem, item.cantItem)}
                   total={data.calcPorItem(item.idItem)}
                 />
               ))}

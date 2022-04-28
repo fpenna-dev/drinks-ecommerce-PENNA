@@ -6,18 +6,18 @@ import "./itemdetail.css";
 import { useState, useContext } from "react";
 import { CartContext } from "./CartContext";
 
-const ItemDetail = ({ drinks }) => {
+const ItemDetail = ({ drinks, id }) => {
   const [itemCount, setItemCount] = useState(0);
   const data = useContext(CartContext);
 
-  // Creo la funcion "addToCart" para agregar los items al carrito con validaciones con respecto al stock y no agregar 0 productos
+  // Creo la funcion "add" para agregar los items al carrito con validaciones con respecto al stock y no agregar 0 productos
   const add = (count) => {
     if (count === 0) {
       alert(`Por favor seleccione cuantos productos quiere agregar al carrito`);
     } else if (count > 0) {
       alert(`Agregaste ${count} productos al carrito de compra`);
       setItemCount(count);
-      data.addToCart(drinks, count);
+      data.addToCart(drinks, count, id);
     }
   };
 
