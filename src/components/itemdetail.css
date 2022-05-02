@@ -1,0 +1,28 @@
+.itemdetail__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    flex-direction: row;
+    margin: 50px;
+
+}
+.itemdetail__info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    margin: 30px;
+}
+.itemdetail__image{
+    width: 300px;
+}
+.itemdetail__title{
+
+}
+
+.itemdetail__desc{
+
+}
